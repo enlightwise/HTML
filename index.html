@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul {
-           list-style-type: square; 
+        table, td, th {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        tfoot {
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <dl>
-        <dt>Title</dt>
-        <dd>HTML course</dd>
-        <dt>Author</dt>
-        <dd>Me</dd>
-    </dl>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Expenses</th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marketing</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Accounting</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$300</th>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
+
+<!-- 34:20 -->
